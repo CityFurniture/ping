@@ -11,8 +11,8 @@ const interval: number = Number.parseInt(intervalString, 10)
 
 async function main(endpoint: Params["endpoint"]): Promise<void> {
     try {
-        let res = await ping.promise.probe(endpoint);
-        console.log(res)
+        let res = await ping.promise.probe(endpoint)
+        console.log(JSON.stringify(res))
     } catch (err) {
         console.log(err)
     }
