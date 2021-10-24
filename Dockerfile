@@ -13,4 +13,4 @@ COPY ["package.json", "npm-shrinkwrap.json*", "package-lock.json", "./"]
 RUN npm install
 ADD . /usr/src/app
 RUN npm run tsc
-CMD [ "npm", "start" ]
+CMD ["npm", "start"]
