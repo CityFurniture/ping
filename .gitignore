@@ -1,5 +1,6 @@
 #js files
 *.js
+lib/
 
 # Logs
 logs
