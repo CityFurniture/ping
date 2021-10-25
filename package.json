@@ -1,6 +1,6 @@
 {
   "name": "internal-host-ping",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Container to ping a host, internal ones mostly",
   "main": "index.js",
   "scripts": {
