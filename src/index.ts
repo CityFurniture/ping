@@ -1,5 +1,5 @@
 import * as ping from 'ping'
-
+import * as NR from 'newrelic'
 interface Params {
     endpoint:  string;
     interval: number;
@@ -12,7 +12,9 @@ const interval: number = Number.parseInt(intervalString, 10)
 async function main(endpoint: Params["endpoint"]): Promise<void> {
     try {
         let res = await ping.promise.probe(endpoint)
-        console.log(JSON.stringify(res))
+        const nrEvent = res as any
+        nrEvent.times = JSON.stringify(res.times)
+        NR.recordCustomEvent('host_ping', nrEvent)
     } catch (err) {
         console.log(err)
     }
