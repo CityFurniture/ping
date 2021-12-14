@@ -1,5 +1,6 @@
 #js files
 *.js
+!newrelic.js
 lib/
 
 # Logs
