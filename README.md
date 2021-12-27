@@ -6,7 +6,7 @@ Get the latest [package version](https://github.com/CityFurniture/ping/pkgs/cont
 docker pull ghcr.io/CityFurniture/ping:main
 ```
 
-Run container, passing PING_HOST as a string, defaults to example.com, and PING_INTERVAL in milliseconds, defaults to 5000.
+Run container, passing `PING_HOST` as a string, defaults to example.com, and `PING_INTERVAL` in milliseconds, defaults to 5000.
 
 You will need to pieces of info from NR:
 - Account ID
