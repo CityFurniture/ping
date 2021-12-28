@@ -1,4 +1,4 @@
-# ping
+# Ping to New Relic
 Container to ping a host, internal ones mostly, utilizing node-ping and reporting to Newrelic through [Events API](https://docs.newrelic.com/docs/data-apis/ingest-apis/introduction-event-api/#submit-event).
 
 Get the latest [package version](https://github.com/CityFurniture/ping/pkgs/container/ping)
